@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "BioSentry",
+    "slug": "biosentry",
+    "scheme": "biosentry",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#0B1416",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.biosentry.app"
+    },
+    "android": {
+      "package": "com.biosentry.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0F1D20",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "backgroundColor": "#0B1416",
+          "dark": {
+            "image": "./assets/splash-icon.png",
+            "backgroundColor": "#0B1416"
+          }
+        }
+      ],
+      "expo-font",
+      "expo-asset"
+    ]
+  }
+}
